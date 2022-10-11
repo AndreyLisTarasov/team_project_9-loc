@@ -1,0 +1,44 @@
+.button {
+    font-family: 'Montserrat';
+    @include font (14px, 600, 18px);
+    padding: 12px 34px;
+
+    color: var(--secondary-text-color);
+    background-color: var(--accent-color);
+    border-radius: 10px;
+    border-color: transparent;
+
+    &:hover {
+            background-color: var(--button-hoover-focus-color);
+    }
+
+    &:focus {
+        background-color: var(--button-hoover-focus-color);
+        color: var(--primary-text-color);
+        border: 2px solid var(--button-hoover-focus-color);
+        outline: none;
+    }
+}
+
+.button-burger,.button-cross {
+    line-height: 0;
+    background-color: transparent;
+    padding: 0;
+    width: 32px;
+    height: 32px;
+
+    &:hover, &:focus {
+        background-color: transparent;
+        border: none;
+
+    }
+}
+
+.buy-now-button, .buy-now-button-mobile {
+    width: 152px;
+}
+
+.buy-now-button-mobile:focus .icon-greater-than {
+    fill: var(--primary-text-color);
+
+}
